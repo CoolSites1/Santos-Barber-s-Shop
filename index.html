@@ -173,6 +173,7 @@
     .service-hover, .service-details {
       margin-top: 1rem;
       font-weight: 700;
+      
       font-size: 1.1rem;
       color: #ff4d4d;
     }
@@ -716,9 +717,10 @@ body.dark-mode footer a:hover {
           <h3>Corte Básico</h3>
           <p>Corte clásico y limpio</p>
           <div class="service-hover"><span class="price">$100</span></div>
-        </div>
-        <div class="service-card service-card-extras" data-aos="flip-right">
-          <div class="service-icon"><i class="fas fa-beard"></i></div>
+        </div>  
+        <div class="service-card service-card-extras" data-aos="flip-right"><div class="service-icon"><i class="fas fa-cut"></i></div>
+          
+         
           <h3>Servicios Adicionales</h3>
           <p>Diseño y cuidado personal</p>
           <div class="service-details">
@@ -755,68 +757,45 @@ body.dark-mode footer a:hover {
   Ver menos
 </button>
 </section>
--->
 
-<!-- Lightbox -->
+
+ Lightbox 
 <div id="lightbox" class="lightbox oculto">
   <span id="cerrarLightbox" class="cerrar-lightbox">&times;</span>
   <img id="imagenLightbox" src="" alt="Imagen ampliada">
 </div>
-
+-->
 
 
 <!-- UBICACIÓN -->
-<section id="ubicacion">
-  <div class="location-info">
-    <h2>Nuestra Barbería</h2>
-    <p>Santos Barber Shop - Donde el estilo se transforma</p>
-    <div class="location-details">
-      <p><i class="fas fa-map-marker-alt"></i> Dirección: Sta. Martha Manzana 018, Reforma, 57840 Cdad. Nezahualcóyotl, Méx.</p>
-      <p><i class="fas fa-phone"></i> Teléfono: 55-44-26-42-94</p>
-      <p><i class="fas fa-clock"></i> Horario: Lun-Mar 12:00 PM - 8:00 PM, Jue-Dom 12:00 PM - 8:00 PM</p>
+<section id="ubicacion" style="padding: 40px 20px; background: #121212;">
+  <div style="max-width: 900px; margin: auto;">
+    <div class="location-info" style="text-align: center; margin-bottom: 30px;">
+      <h2 style="font-size: 2rem; margin-bottom: 10px;">Nuestra Barbería</h2>
+      <p style="font-size: 1.1rem;">Santos Barber Shop - Donde el estilo se transforma</p>
+      <div class="location-details" style="margin-top: 20px; font-size: 1rem;">
+        <p><i class="fas fa-map-marker-alt"></i> Dirección: Sta. Martha Manzana 018, Reforma, 57840 Cdad. Nezahualcóyotl, Méx.</p>
+        <p><i class="fas fa-phone"></i> Teléfono: 55-44-26-42-94</p>
+        <p><i class="fas fa-clock"></i> Horario: Lun-Mar 12:00 PM - 8:00 PM, Jue-Dom 12:00 PM - 8:00 PM</p>
+      </div>
+      <a href="https://www.google.com/maps?q=Sta.+Martha+Manzana+018,+Reforma,+57840+Nezahualc%C3%B3yotl,+M%C3%A9x."
+         target="_blank"
+         style="display: inline-block; margin-top: 15px; padding: 10px 20px; background: #e60000; color: #fff; border-radius: 8px; text-decoration: none;">
+        <i class="fas fa-map"></i> Ver en Google Maps
+      </a>
     </div>
-    <a href="https://www.google.com/maps?q=Sta.+Martha+Manzana+018,+Reforma,+57840+Nezahualc%C3%B3yotl,+M%C3%A9x." 
-       target="_blank" 
-       class="btn btn-sm" 
-      >
-      <i class="fas fa-map"></i> Ver en Google Maps
-    </a>
+
+    <div class="map-container" style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%; box-shadow: 0 8px 40px rgba(255, 0, 0, 0.3); border-radius: 30px; overflow: hidden;">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.756193774411!2d-98.9628009!3d19.3870899!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1e345999d1c15%3A0xe9a5b2f85d87063f!2sSta.%20Martha%20Manzana%20018%2C%20Reforma%2C%2057840%20Cd%20Nezahualc%C3%B3yotl%2C%20M%C3%A9x.!5e0!3m2!1ses-419!2smx!4v1720365000000"
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
+        allowfullscreen
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
   </div>
-
-  <style>
-  .map-container {
-    box-shadow: 0 8px 40px rgba(255, 0, 0, 0.3);
-    border-radius: 30px;
-    overflow: hidden;
-    width: 100%;
-    max-width: 600px;
-    margin: auto;
-    aspect-ratio: 16 / 9;
-  }
-
-  @media (max-width: 600px) {
-    .map-container {
-      border-radius: 20px;
-      aspect-ratio: 4 / 3;
-    }
-  }
-
-  .map-container iframe {
-    width: 100%;
-    height: 100%;
-    border: 0;
-  }
-</style>
-
-<div class="map-container">
-  <iframe
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.756193774411!2d-98.9628009!3d19.3870899!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1e345999d1c15%3A0xe9a5b2f85d87063f!2sSta.%20Martha%20Manzana%20018%2C%20Reforma%2C%2057840%20Cd%20Nezahualc%C3%B3yotl%2C%20M%C3%A9x.!5e0!3m2!1ses-419!2smx!4v1720365000000"
-    allowfullscreen
-    loading="lazy"
-    referrerpolicy="no-referrer-when-downgrade">
-  </iframe>
-</div>
-
+</section>
 
 <!-- SECCIÓN: CONTRATACIÓN DE BARBERO -->
 <section id="contratacion" style="background: linear-gradient(120deg, #111, #333); color: #eee; padding: 4rem 1rem; text-align: center; box-shadow: 0 -4px 30px rgba(0,0,0,0.5);">
